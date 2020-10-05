@@ -1,0 +1,18 @@
+{% extends 'newapp/1base.html' %}
+
+{% block headcontent %}
+    {% include 'newapp/2with_head.html' %}
+{% endblock headcontent %}
+
+{% block bodycontent %}
+<body>
+    <div class="container">
+        <h4 class="hide">Always hidden</h4>
+        <h4 class="hide-on-small-only">Small-screen hidden</h4>
+        <h4 class="hide-on-med-only">Mid-screen hidden</h4>
+        <h4 class="hide-on-large-only">Large-screen hidden</h4>
+        <h4 class="hide-on-med-and-down">mid'n'small-screen hidden</h4>
+        <h4 class="hide-on-med-and-up">mid'n'large-screen hidden</h4>
+    </div>
+</body>
+{% endblock bodycontent %}

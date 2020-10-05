@@ -1,0 +1,37 @@
+{% extends 'newapp/1base.html' %}
+
+{% block headcontent %}
+    {% include 'newapp/2with_head.html' %}
+
+    <style>
+        .box{
+            height: 200px;
+        }
+    </style>
+
+{% endblock headcontent %}
+
+{% block bodycontent %}
+<body>
+    <div class="container">
+        <h4 class="center-align">Central alignment</h4>
+        <h4 class="left-align">Left-align class</h4>
+        <h4 class="right-align">Right-align class</h4>
+    </div>
+    <div class="container grey lighten-2 box valign-wrapper">
+        <h5>Vertical alignment</h5>
+    </div>
+    <p class="center-align">inside container class, to which we added style:
+        height in head section for better visualisation.</p>
+    <p class="center-align">After our custom 'box' feature we just add 'valign-wrapper'.</p>
+    <div class="container">
+        <p>Text inside container class should be responsive. A Django template is a text document or a Python string marked-up using
+            the Django template language. Django being a powerful Batteries included
+            framework provides convenience to rendering data in a template</p>
+         <p class="truncate">We may also class='truncate' sample text to one line.
+             A Django template is a text document or a Python string marked-up using
+            the Django template language. Django being a powerful Batteries included
+            framework provides convenience to rendering data in a template</p>
+    </div>
+</body>
+{% endblock bodycontent %}
